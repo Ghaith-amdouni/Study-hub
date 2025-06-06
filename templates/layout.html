@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url_for('index') }}">📚 Study Hub</a>
+            <form class="d-flex" method="get" action="{{ url_for('index') }}">
+                <input class="form-control me-2" type="search" name="search" placeholder="Search Notes" aria-label="Search">
+                <button class="btn btn-light" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer class="text-center mt-5 mb-3">
+        <p class="text-muted">© 2025 Notes App</p>
+    </footer>
+
+    <script>
+    function confirmDelete() {
+        return confirm('Are you sure you want to delete this note?');
+    }
+    </script>
+</body>
+</html>

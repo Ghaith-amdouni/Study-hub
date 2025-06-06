@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Edit Note</h2>
+<form method="post">
+    <div class="mb-3">
+        <input type="text" name="title" class="form-control" value="{{ note[1] }}" required>
+    </div>
+    <div class="mb-3">
+        <textarea name="content" class="form-control" rows="5" required>{{ note[2] }}</textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Update Note</button>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
