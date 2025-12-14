@@ -55,23 +55,8 @@ Study Hub allows users to:
 - **Confirmation Prompts** before deletion to prevent data loss.
 - **Custom CSS** enhancements for a better UI/UX.
 
----
-
-## 🙋‍♂️ Author
-
-Developed by [Your Name] as part of my CS50x learning journey.
-
----
-
-## 📃 License
-
-This project is open-source and free to use under the MIT License.
-
-
-
-
----
 
 This project, **Study Hub**, demonstrates a real-world CRUD (Create, Read, Update, Delete) web application. It was developed fully by me, following the skills and knowledge learned through CS50x.
 
 I hope **Study Hub** can be a small but meaningful contribution towards making study organization easier!
+
